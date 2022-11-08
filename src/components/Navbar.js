@@ -7,7 +7,7 @@ function NavbarHeader() {
   return (
     <Navbar collapseOnSelect expand="lg" variant="dark" style={{backgroundColor: '#0A2E36'}}>
       <Container fluid>
-        <Navbar.Brand href="/">Jack Regan</Navbar.Brand>
+        <Navbar.Brand href="/" style={{color: '#14CC60'}}>Jack Regan</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
