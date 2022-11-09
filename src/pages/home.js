@@ -11,7 +11,7 @@ export default function Homepage() {
                 </div>
             </div>
             <div id='image-div'>
-                <img src='images/potential-blog-transition.png' id='image-transition'/>
+                <img src={require('../images/potential-blog-transition.png')} id='image-transition'/>
             </div>
             <div id='home-body-bottom'>
                 <div className='text-left-div'>

@@ -13,13 +13,12 @@ import Placementpage from './pages/placement';
 import Pypage from './pages/py';
 import UIUXpage from './pages/UxUi';
 import NavbarHeader from './components/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <NavbarHeader />
-      <div style={{backgroundColor: '#0A2E36', width: '100%', height: '100vh'}}>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/blog" element={<Blogpage />} />
@@ -34,9 +33,7 @@ function App() {
           <Route path="/py" element={<Pypage />} />
           <Route path="/UIUX" element={<UIUXpage />} />
         </Routes>
-      </div>
-
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
