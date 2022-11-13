@@ -1,0 +1,14 @@
+.NavbarLink {
+    text-decoration: none;
+    padding: 8px;
+    color: #91a1a4;
+}
+
+.NavbarLink:hover {
+    color: #c2cbcd;
+}
+
+.NavDrop {
+    display: flex;
+    flex-direction: column;
+}
