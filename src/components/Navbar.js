@@ -18,16 +18,16 @@ function NavbarHeader() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Programming" id="collasible-nav-dropdown" className='NavDrop'>
-              <Link className='NavbarLink' to="/py">Python</Link>
-              <Link className='NavbarLink' to="/c">C</Link>
-              <Link className='NavbarLink' to="/hc">HTML / CSS</Link>
+              <NavDropdown.Item><Link className='NavbarLink' to="/py">Python</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link className='NavbarLink' to="/c">C</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link className='NavbarLink' to="/hc">HTML / CSS</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Content Areas" id="collasible-nav-dropdown">
-              <Link className='NavbarLink' to="/ca1">CA1-4</Link>
-              <Link className='NavbarLink' to="/ca2">CA5-8</Link>
+              <NavDropdown.Item><Link className='NavbarLink' to="/ca1">CA1-4</Link></NavDropdown.Item>
+              <NavDropdown.Item><Link className='NavbarLink' to="/ca2">CA5-8</Link></NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Projects" id="collasible-nav-dropdown">
-              <Link className='NavbarLink' to="/UIUX">UI/UX</Link>
+              <NavDropdown.Item><Link className='NavbarLink' to="/UIUX">UI/UX</Link></NavDropdown.Item>
             </NavDropdown>
             <Link className='NavbarLink' to="/placement">Industry Placement</Link>
             <Link className='NavbarLink' to="/event">Events</Link>
