@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
 import Homepage from './pages/home';
 import Blogpage from './pages/blogs';
@@ -16,6 +16,11 @@ import NavbarHeader from './components/Navbar';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Jack Regan Portfolio";
+  }, []);
+
   return (
     <HashRouter>
       <NavbarHeader />
