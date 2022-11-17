@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './App.css';
 import Homepage from './pages/home';
 import Blogpage from './pages/blogs';
-import Cpage from './pages/c';
+import Cpage from './pages/Cpage';
 import CA1page from './pages/ca1-4';
 import CA2page from './pages/ca5-8';
 import Contactpage from './pages/contact';
@@ -22,12 +22,13 @@ function App() {
   }, []);
 
   return (
-    <HashRouter>
-      <NavbarHeader />
+    <div className='background'>
+      <HashRouter>
+        <NavbarHeader />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/blog" element={<Blogpage />} />
-          <Route path="/c" element={<Cpage />} />
+          <Route path="/cpage" element={<Cpage />} />
           <Route path="/ca1" element={<CA1page />} />
           <Route path="/ca2" element={<CA2page />} />
           <Route path="/contact" element={<Contactpage />} />
@@ -38,7 +39,9 @@ function App() {
           <Route path="/py" element={<Pypage />} />
           <Route path="/UIUX" element={<UIUXpage />} />
         </Routes>
-    </HashRouter>
+      </HashRouter>
+    </div>
+
   );
 }
 

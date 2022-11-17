@@ -1,14 +1,80 @@
-.NavbarLink {
-    text-decoration: none;
-    padding: 8px;
-    color: #91a1a4;
-}
-
-.NavbarLink:hover {
-    color: #c2cbcd;
-}
-
-.NavDrop {
+.navbarDiv {
+    width: 100%;
+    height: 5vh;
+    background-color: #0A2E36;
+    ;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#linkBrand {
+    text-decoration: none;
+    color: #14CC60;
+    font-size: xx-large;
+    font-weight: 500;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#linkBrand:hover {
+    color: #17e66c;
+}
+
+.link {
+    font-size: large;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    color: #7D8A90;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: lightgray;
+    cursor: pointer;
+}
+
+/*Dropdown shit*/
+.menu {
+    position: absolute;
+
+    list-style-type: none;
+    margin: 32px 0;
+    padding: 0;
+    box-shadow: 7px 7px 7px #09272e;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.menu>li {
+    margin: 0;
+
+    background-color: #0A2E36;
+}
+
+.menu>li>Link {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+
+    background: none;
+    color: inherit;
+    border: none;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+.dropdownButton{
+    width: 100%;
+    height: 27px;
+}
+
+.linkDropdown{
+    font-size: large;
+    margin-left: 15px;
+
+    color: #7D8A90;
+    text-decoration: none;
+    height: 27px;
 }
